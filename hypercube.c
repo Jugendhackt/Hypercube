@@ -1,3 +1,8 @@
+/* Author: Sebastian Bruchhold */
+
+#ifndef HYPERCUBE_C
+#define HYPERCUBE_C
+
 #include <stdbool.h>
 #include <stddef.h>
 
@@ -45,3 +50,5 @@ void convert(bool arr[Z][Y][X])
 			for (x = 0; x < X; x++)
 				set(x, y, z, arr[z][y][x]);
 }
+
+#endif
