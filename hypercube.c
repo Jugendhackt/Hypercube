@@ -28,7 +28,7 @@ void plot_pred(bool arr[Z][Y][X], bool (*pred)(size_t, size_t, size_t))
 	for (z = 0; z < Z; z++)
 		for (y = 0; y < Y; y++)
 			for (x = 0; x < X; x++)
-				arr[z][x][y] = pred(x, y, z);
+				arr[z][y][x] = pred(x, y, z);
 }
 
 void plot_fun(bool arr[Z][Y][X], size_t (*fun)(size_t, size_t))
